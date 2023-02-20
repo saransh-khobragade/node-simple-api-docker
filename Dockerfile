@@ -5,6 +5,6 @@ COPY package-lock.json ./
 COPY ./ ./
 RUN npm i
 COPY start.sh .
-EXPOSE 8080
+EXPOSE $PORT
 CMD [ "node","index.js" ]
 ENTRYPOINT [ "/app/start.sh" ]
