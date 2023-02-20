@@ -6,4 +6,5 @@ COPY ./ ./
 RUN npm i
 COPY start.sh .
 EXPOSE 8080
+CMD [ "node","index.js" ]
 ENTRYPOINT [ "/app/start.sh" ]
